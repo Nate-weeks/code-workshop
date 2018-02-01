@@ -26,7 +26,7 @@ array_of_arrays.each do |array|
   checksum = array.max - array.min
   sum += checksum
 end
-puts sum
+puts "#1 result #{sum}"
 
 total = 0
 array_of_arrays.each do |array|
@@ -38,4 +38,4 @@ array_of_arrays.each do |array|
     end
   end
 end
-puts total
+puts "#2 result #{total}"

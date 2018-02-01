@@ -12,4 +12,17 @@ for (let i = 0; i < parsedInput.length; i++){
 if (parsedInput[0] == parsedInput[parsedInput.length - 1]){
   sum += parsedInput[0]
 }
+
+console.log(parsedInput)
 console.log(sum)
+   let total = 0
+for (let i = 0; i < parsedInput.length; i++){
+  let circularTotal = i + parsedInput.length/2
+  if (circularTotal > parsedInput.length){
+    circularTotal = circularTotal - (parsedInput.length - 1)
+  }
+  if (parsedInput[i] == parsedInput[circularTotal]){
+    total += parsedInput[i] * 2
+  }
+}
+console.log(total)
