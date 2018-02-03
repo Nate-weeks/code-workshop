@@ -26,7 +26,14 @@ def create_garbage(input)
   input
 end
 
+def test1
+  puts "day 9 example: "
 
-test_input = "{{<a!>},{<a!>},{<a!>},{<ab>}}".split("")
-# test_output = ignore_characters(test_input)
-puts create_garbage(ignore_characters(test_input))
+  test_input = "{{<a!>},{<a!>},{<a!>},{<ab>}}".split("")
+  result1 = ignore_characters(test_input)
+  result2 = create_garbage(test_input)
+
+  puts "result1: #{result1} ---- result2: #{result2}"
+end
+
+test1
